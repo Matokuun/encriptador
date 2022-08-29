@@ -5,6 +5,7 @@ body{
     background:linear-gradient(to right, white, white, lightblue, blue);
     position: relative;
     border: 2px solid blue;
+    width:auto;
 }
 #munheco{
     display: inline;
@@ -14,35 +15,35 @@ body{
     padding-top: 4px;
 }
 .titulo-header{
-    display: inline;
-    position: absolute;
+    display: block;
+    box-sizing: border-box;
     width: 30%;
-    margin: 10% 12%;
+    margin: 5%;
     font-size: 40px;
     font-weight: 700;
-    color: aliceblue;
+    color: blue;
 }
 main{
     background:lightblue;
 }
 .container-main{
-    width:100%;
-    height: 500px;
-    margin: 0 auto;
+    width:auto;
+    height: 1750px;
+    padding-top: 20px;
 }
 .container-input{
-    float: left;
+    display: block;
     box-sizing: border-box;
-    width:45%;
-    height: 400px;
-    margin: 20px 2.5%;
+    width:auto;
+    height: 750px;
+    margin: 0px 2.5% 20px 2.5%;
     border: 2px dashed blue;  
 }
 .container-output{
-    float: right;
+    display: block;
     box-sizing: border-box;
-    width: 45%;
-    height: 400px;
+    width: auto;
+    height: 750px;
     margin: 20px 2.5%;
     border: 2px dashed blue;
        
@@ -51,7 +52,7 @@ main{
     display: none;
 }
 .texto{
-    width: 100%;
+    width:auto;
     height: 70%;
 }
 .textarea{
@@ -63,7 +64,7 @@ main{
     outline: none;
     resize: none;
     background-color: lightblue;
-    font-size: 20px;
+    font-size: 40px;
 }
 .advertencia{
     box-sizing: border-box;
@@ -125,16 +126,15 @@ main{
     color: white;
 }
 #fondo-pregunton{
-    width: 100%;
+    width:auto;
     height: 100%;
     background: url(images/background-pregunta.jpg);
 }
 .texto-inicial{
     text-align: center;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 160px 70px;
+    width:auto;
+    padding: 10em 0;
 }
 .no-texto-titulo{
     box-sizing: border-box;
@@ -178,16 +178,17 @@ main{
     color: blue;
 }
 .pie{
-    width: 100%;
-    height: 120px;
+    width:auto;
+    height: 275px;
     background-color: black;
     text-align: center;
 }
 .pie-texto{
     box-sizing: border-box;
-    padding-top: 5px;
+    padding-top: 25px;
     color: violet;
     padding-bottom: 10px;
+    font-size: 25px;
 }
 .pie-imagenes{
     margin-top: 15px;
@@ -196,10 +197,99 @@ main{
 footer div div a{
     padding:0 20px;
 }
-@media screen and (max-width:480px){
-    .container-input,.container-output{
-        display: block;
-        float: none;
-        width: auto;
+@media screen and (min-width: 768px) {
+    .titulo-header{
+        display: inline;
+        position: absolute;
+        width: 30%;
+        margin: 10% 12%;
+        font-size: 40px;
+        font-weight: 700;
+        color: aliceblue;
+    }
+    .container-main{
+        width:auto;
+        height: 750px;
+        margin: 0 auto;
+        padding-top:0;
+    }
+    .container-input{
+        display: inline;
+        float: left;
+        width: 45%;
+        height: 600px;
+        margin: 20px 2.5%;
+    }
+    .container-output{
+        display: inline;
+        float:right;
+        width: 45%;
+        height: 600px;
+        margin: 20px 2.5%;
+    }
+    .textarea{
+        font-size: 30px;
+    }
+    .pie-texto{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 913px) {
+    .titulo-header{
+        display: inline;
+        position: absolute;
+        width: 30%;
+        margin: 10% 12%;
+        font-size: 40px;
+        font-weight: 700;
+        color: aliceblue;
+    }
+    .container-main{
+        width:100%;
+        height: 500px;
+        margin: 0 auto;
+        padding-top:0;
+    }
+    .container-input{
+        display: inline;
+        float: left;
+        width: 45%;
+        height: 400px;
+        margin: 20px 2.5%;
+    }
+    .container-output{
+        display: inline;
+        float: right;
+        width: 45%;
+        height: 400px;
+        margin: 20px 2.5%;
+    }
+    .textarea{
+        font-size: 20px;
+    }
+    .boton-encriptar{
+        font-size: 16px;
+    }
+    .boton-desencriptar{
+        font-size: 16px;
+    }
+    .no-texto-titulo{
+        font-size: 30px;
+    }
+    .no-texto-subtitulo{
+        font-size: 15px;
+    }
+    .pie{
+        width: 100%;
+        height: 120px;
+        background-color: black;
+        text-align: center;
+    }
+    .pie-texto{
+        box-sizing: border-box;
+        padding-top: 5px;
+        color: violet;
+        padding-bottom: 10px;
+        font-size: 20px;
     }
 }
