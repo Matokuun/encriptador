@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <!--<link rel="manifest" href="favicons/manifest.json">-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cfbbd3b798.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="head-matomaniaco">
+            <img src="images/Muñeco.jpg" id="munheco" alt="Persona mirando un diamante con una lupa">
+            <div class="titulo-header">Encriptador</div>
+        </div>
+    </header>
+    <main>
+        <div class="container-main">
+            <div class="container-input">
+                <div class="texto">
+                    <textarea class="textarea" placeholder="Ingrese el texto aquí" id="input"></textarea>
+                </div>
+                <div class="advertencia"><img src="images/Vector.png" id="advertencia-icon" alt="advertencia">Solo letras minúsculas y sin acento.</div>
+                <div class="pack-botones">
+                    <button class="boton-encriptar" value="encriptar" id="encriptar" onclick="encriptarTexto()">Encriptar</button>
+                    <button class="boton-desencriptar" value="desencriptar" id="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="container-output">
+                <div id="fondo-pregunton">
+                    <div class="texto-inicial">
+                        <div class="no-texto-titulo">Ningún mensaje fue encontrado</div>
+                        <div class="no-texto-subtitulo">Ingresa el texto que deseas encriptar o desencriptar</div>
+                    </div>
+                </div>
+                <div id="container-output-respuesta">
+                    <div class="texto">
+                        <textarea id="output" class="textarea"></textarea>
+                    </div>
+                    <div class="copiar-area">
+                        <button class="copiar-boton" value="copiar" onclick="copiar()">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="pie">
+            <div class="pie-texto">Encriptador creado por Matías Adorno</div>
+            <div class="pie-texto">Challenge del Programa ONE (de Alura LATAM y Oracle)</div>
+            <div class="pie-imagenes">
+                <a href="https://github.com/Matokuun"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="https://www.linkedin.com/in/mat%C3%ADas-alfredo-adorno/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/motor_encriptador.js"></script>
+</body>
+</html>
+
+<!--<img src="images/Muñeco.jpg" class="munheco">-->

@@ -1,0 +1,205 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+.head-matomaniaco{
+    background:linear-gradient(to right, white, white, lightblue, blue);
+    position: relative;
+    border: 2px solid blue;
+}
+#munheco{
+    display: inline;
+    border: none; /*provisorio*/
+    width: 25%;
+    margin: 0 15% 0 5%;
+    padding-top: 4px;
+}
+.titulo-header{
+    display: inline;
+    position: absolute;
+    width: 30%;
+    margin: 10% 12%;
+    font-size: 40px;
+    font-weight: 700;
+    color: aliceblue;
+}
+main{
+    background:lightblue;
+}
+.container-main{
+    width:100%;
+    height: 500px;
+    margin: 0 auto;
+}
+.container-input{
+    float: left;
+    box-sizing: border-box;
+    width:45%;
+    height: 400px;
+    margin: 20px 2.5%;
+    border: 2px dashed blue;  
+}
+.container-output{
+    float: right;
+    box-sizing: border-box;
+    width: 45%;
+    height: 400px;
+    margin: 20px 2.5%;
+    border: 2px dashed blue;
+       
+}
+#container-output-respuesta{
+    display: none;
+}
+.texto{
+    width: 100%;
+    height: 70%;
+}
+.textarea{
+    box-sizing: border-box;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: lightblue;
+    font-size: 20px;
+}
+.advertencia{
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+#advertencia-icon{
+    padding-right: 10px;
+}
+.pack-botones{
+    width: 100%;
+    height: 20%;
+}
+.boton-encriptar{
+    box-sizing: border-box;
+    width: 40%;
+    height: 50%;
+    margin: 20px 5%;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+.boton-desencriptar{
+    box-sizing: border-box;
+    float: right;
+    width: 40%;
+    height: 50%;
+    margin: 20px 5%;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    color: blue;
+    transition: 0.5s;
+}
+.boton-encriptar:hover{
+    background-color: #2a09e2;
+    cursor: pointer;
+}
+.boton-desencriptar:hover{   
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.boton-encriptar:active{
+    transition: none;
+    background-color: white;
+    color: blue;
+}
+.boton-desencriptar:active{
+    transition: none;
+    background-color: blue;
+    color: white;
+}
+#fondo-pregunton{
+    width: 100%;
+    height: 100%;
+    background: url(images/background-pregunta.jpg);
+}
+.texto-inicial{
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 160px 70px;
+}
+.no-texto-titulo{
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: lavender;
+    color: blue;
+}
+.no-texto-subtitulo{
+    padding-top: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: lavender;
+    color: blue;
+}
+.copiar-area{
+    width: 100%;
+    height: 30%;
+}
+.copiar-boton{
+    box-sizing: border-box;
+    width: 60%;
+    height: 50%;
+    margin: 4.5% 20%;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+.copiar-boton:hover{
+    background-color: #2a09e2;
+    cursor: pointer;
+}
+.copiar-boton:active{
+    transition: none;
+    background-color: white;
+    color: blue;
+}
+.pie{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    text-align: center;
+}
+.pie-texto{
+    box-sizing: border-box;
+    padding-top: 5px;
+    color: violet;
+    padding-bottom: 10px;
+}
+.pie-imagenes{
+    margin-top: 15px;
+    padding: 0 10px;
+}
+footer div div a{
+    padding:0 20px;
+}
+@media screen and (max-width:480px){
+    .container-input,.container-output{
+        display: block;
+        float: none;
+        width: auto;
+    }
+}
